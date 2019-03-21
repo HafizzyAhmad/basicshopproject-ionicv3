@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPage {
 
-  public selectedItems = [];
+  /*public selectedItems = [];
  
   total = 0;
  
-  constructor(private LocalDataService: LocalDataService) { }
+  constructor(public LocalDataService: LocalDataService) { }
 
   public ngOnInit() {
-    /*let makanan = this.LocalDataService.getMakanan();
+    let makanan = this.LocalDataService.getMakanan();
     let selected = {};
     for (let item of makanan) {
       if (selected[item.id]) {
@@ -27,4 +27,3 @@ export class CartPage {
     this.selectedItems = Object.keys(selected).map(key => selected[key]);
     this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);*/
   }
-}

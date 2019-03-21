@@ -1,7 +1,5 @@
+import { LocalDataService } from './../services/local-data.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { LocalDataService } from '../services/local-data.service';
-import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-home',
@@ -9,38 +7,32 @@ import { Storage } from '@ionic/storage';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  /*makanan: any;
-  item: [];
-  cart: [];
+  foodList: any;
 
-  constructor(public router: Router,public localDataService: LocalDataService) {
-    this.getMakanan();
+  constructor(public localDataService: LocalDataService) {
+    this.getFood();
   }
   
-  getMakanan() {
+  getFood() {
     //this.foodList = this.localDataService.getFoodList();
-    this.localDataService.getMakanan()
+    this.localDataService.getfoodList()
     .then(data => {
-      this.makanan = data;
-      console.log(this.makanan);
+      this.foodList = data;
+      console.log(this.foodList);
     });
   }
 
-  ngOnInit(){
-
-  }
-
-  addToCart(foodName) {
-    //this.localDataService.addMakanan(this.makanan);
-    this.localstorage.setItem("foodname", foodName);
+/*
+  addToCart(makanan) {
+    this.localDataService.addMakanan(this.makanan);
+    this.LocalDataService.setItem(this.makanan);
   }
 
   openCart() {
     this.router.navigate(['cart']);
   }
-
+*/
   
 
 }
 
-*/
