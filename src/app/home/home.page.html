@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header">
+      Food 
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openCart()">
+        <!--<ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>-->
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card class="welcome-card" *ngFor="let item of makanan">
+      <ion-img src={{item.imageUrl}}></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>RM{{item.price}}</ion-card-subtitle>
+        <ion-card-title>{{item.name}}</ion-card-title>
+        <!--<ion-button class="buttoncart" shape="round" size="small" color="tertiary">Add to cart</ion-button>-->
+        <ion-button class ="button cart" shape="round" size="small" color="tertiary" (click)="addToCart({{item.name}})">Add to Cart</ion-button>
+
+      </ion-card-header>
+      <!--<ion-card-content>
+        <button ion-button>Block Button</button>
+      </ion-card-content>-->
+    </ion-card>
+
+</ion-content>
+
+

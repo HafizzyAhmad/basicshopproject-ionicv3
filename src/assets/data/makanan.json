@@ -1,0 +1,50 @@
+[
+    {
+    "id": 0,
+    "name": "Nasi Lemak Ayam Rendang",
+    "price": 7,
+    "imageUrl": "https://i.imgur.com/dlnandU.png"
+},
+{
+    "id": 1,
+    "name": "Spaghetti Bolognese Meatball IKEA",
+    "price": 12,
+    "imageUrl": "https://i.imgur.com/5q3wiwY.png"
+},
+{
+    "id": 2,
+    "name": "Nasi Goreng Kampung",
+    "price": 4,
+    "imageUrl": "https://i.imgur.com/pAs6Cfw.png"
+},
+{
+    "id": 3,
+    "name": "Burger Ramly Spesial",
+    "price": "4",
+    "imageUrl": "https://i.imgur.com/y7oeeuw.png"
+},
+{
+    "id": 4,
+    "name": "Nasi Kerabu Abe",
+    "price": 4,
+    "imageUrl": "https://i.imgur.com/u4HiIEo.png"
+},
+{
+    "id": 5,
+    "name": "Mee Tarik Kari",
+    "price": 4,
+    "imageUrl": "https://i.imgur.com/wvDYN4k.png"
+},
+{
+    "id": 6,
+    "name": "Nasi Dagang Gulai",
+    "price": 4,
+    "imageUrl": "https://i.imgur.com/sltT90e.png"
+},
+{
+    "id": 7,
+    "name": "Mee Goreng Garing",
+    "price": 4,
+    "imageUrl": "https://i.imgur.com/KV0kNDU.png"
+}
+]
