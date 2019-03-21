@@ -8,22 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPage {
 
-  /*public selectedItems = [];
+  public selectedItems = [];
  
   total = 0;
  
-  constructor(public LocalDataService: LocalDataService) { }
+  constructor(private LocalDataService: LocalDataService) { }
 
   public ngOnInit() {
-    let makanan = this.LocalDataService.getMakanan();
+    let items = this.LocalDataService.getCart();
     let selected = {};
-    for (let item of makanan) {
-      if (selected[item.id]) {
-        selected[item.id].count++;
+    for (let obj of items) {
+      if (selected[obj.id]) {
+        selected[obj.id].count++;
       } else {
-        selected[item.id] = {...item, count: 1};
+        selected[obj.id] = {...obj, count: 1};
       }
     }
-    this.selectedItems = Object.keys(selected).map(key => selected[key]);
-    this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);*/
+    this.selectedItems = Object.keys(selected).map(key => selected[key])
+    this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);
   }
+}
