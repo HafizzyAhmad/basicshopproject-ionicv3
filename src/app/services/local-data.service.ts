@@ -32,5 +32,10 @@ export class LocalDataService {
   addMakanan(makanan) {
     this.cart.push(makanan);
   }
+
+  removeMakanan (makanan){
+  
+  }
+  
   
 }

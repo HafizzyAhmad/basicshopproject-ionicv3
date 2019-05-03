@@ -22,12 +22,13 @@ export class HomePage implements OnInit {
     this.localDataService.getMakanan()
     .then(data => {
       this.makanan = data;
-      console.log(this.makanan);
+      //console.log(this.makanan);
     });
   }
 
   ngOnInit(){
     this.cart = this.localDataService.getCart();
+    
 
   }
 

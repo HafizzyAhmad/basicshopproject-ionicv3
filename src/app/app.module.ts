@@ -23,4 +23,6 @@ import { LocalDataService } from './services/local-data.service';
   ],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule {}
