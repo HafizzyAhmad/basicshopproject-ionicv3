@@ -1,5 +1,6 @@
 import { LocalDataService } from './../services/local-data.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -12,7 +13,7 @@ export class CartPage {
  
   total = 0;
  
-  constructor(private LocalDataService: LocalDataService) { }
+  constructor(public router: Router, private LocalDataService: LocalDataService) { }
 
   public ngOnInit() {
     let items = this.LocalDataService.getCart();
@@ -28,6 +29,14 @@ export class CartPage {
     this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);
   }
 
-  
-  
+
+  openCheckout() {
+    this.router.navigate(['checkout']);
+  }
+
+  deleteMakanan(){
+
+  }
+
+
 }
