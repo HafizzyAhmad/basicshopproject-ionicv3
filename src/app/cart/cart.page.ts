@@ -25,7 +25,7 @@ export class CartPage {
         selected[obj.id] = {...obj, count: 1};
       }
     }
-    this.selectedItems = Object.keys(selected).map(key => selected[key])
+    this.selectedItems = Object.keys(selected).map(key => selected[key]);
     this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);
   }
 
@@ -34,8 +34,12 @@ export class CartPage {
     this.router.navigate(['checkout']);
   }
 
-  deleteMakanan(){
-
+  deleteMakanan(selectedItems){
+     //console.log("delete button")
+     let index: number = this.selectedItems.indexOf(selectedItems);
+     if(index > -1){
+     this.selectedItems.splice(index, 1);
+     }
   }
 
 

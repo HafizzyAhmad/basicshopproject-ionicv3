@@ -34,7 +34,7 @@ export class LocalDataService {
   }
 
   removeMakanan (makanan){
-  
+
   }
   
   

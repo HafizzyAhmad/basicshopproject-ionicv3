@@ -16,6 +16,11 @@ export class HomePage implements OnInit {
   constructor(public router: Router,public localDataService: LocalDataService) {
     this.getMakanan();
   }
+
+  public doughnutChartLabels:string[] = ['Me','Myself','Irine'];
+  public doughnutChartData:number[] = [1200,800,300];
+  public doughnutChartType:string = 'doughnut';
+
   
   getMakanan() {
     //this.foodList = this.localDataService.getFoodList();
@@ -40,6 +45,10 @@ export class HomePage implements OnInit {
 
   openCart() {
     this.router.navigate(['cart']);
+  }
+
+  openDetails() {
+    this.router.navigate(['detail']);
   }
   
   

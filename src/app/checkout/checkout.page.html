@@ -14,16 +14,16 @@
 
 <ion-item>
 
-<ion-label color="primary" class="total">RM 20</ion-label>
+<ion-label color="primary" class="total">Total RM : {{this.total}}</ion-label>
 
   <ion-label position="stacked">Name</ion-label>
-  <ion-input></ion-input>
+  <ion-input [(ngModel)]="userData.name"></ion-input>
 
   <ion-label position="stacked">Phone No</ion-label>
-  <ion-input></ion-input>
+  <ion-input [(ngModel)]="userData.phone"></ion-input>
 
   <ion-label position="stacked">Email Address</ion-label>
-  <ion-input></ion-input>
+  <ion-input [(ngModel)]="userData.email"></ion-input>
 
   </ion-item>
 
@@ -31,5 +31,6 @@
 </ion-content>
 
   <ion-footer>
-  <ion-button buttonFixed color="tertiary" expand="block">SUBMIT</ion-button>
+  <ion-button buttonFixed color="tertiary" expand="block" (click)="submitOrder()">SUBMIT</ion-button>
+  <!--<ion-button buttonFixed color="tertiary" expand="block" (click)="presentAlert()">Test</ion-button>-->
   </ion-footer>
