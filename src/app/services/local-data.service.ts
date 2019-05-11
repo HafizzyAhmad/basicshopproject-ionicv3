@@ -15,7 +15,7 @@ export class LocalDataService {
 
   getMakanan() {
     return new Promise(resolve => {
-      const url = "../assets/data/makanan.json";
+      const url = '../assets/data/makanan.json';
       this.http.get(url).subscribe(data => {
         resolve(data);
         return this.makanan;
@@ -33,9 +33,5 @@ export class LocalDataService {
     this.cart.push(makanan);
   }
 
-  removeMakanan (makanan){
-
-  }
-  
-  
+  removeMakanan (makanan) {}
 }

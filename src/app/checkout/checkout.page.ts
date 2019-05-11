@@ -31,6 +31,7 @@ export class CheckoutPage implements OnInit {
       }
     }
     this.selectedItems = Object.keys(selected).map(key => selected[key])
+    //console.log(this.total)
     this.total = this.selectedItems.reduce((a, b) => a + (b.count * b.price), 0);
   }
 

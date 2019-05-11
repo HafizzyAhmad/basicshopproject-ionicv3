@@ -3,7 +3,7 @@ import { Http, Headers, Response  } from '@angular/http';
 import { HttpHeaders } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 
-let apiUrl = 'http://localhost/food/api/insertOrder';
+const apiUrl = 'http://localhost/food/api/insertOrder';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class OrderService {
 
   createOrder(orderDetail) {
     return new Promise((resolve, reject) => {
-      let headers = new HttpHeaders();
+      const headers = new HttpHeaders();
       console.log(orderDetail);
       this.http.post(apiUrl , JSON.stringify(orderDetail), {headers: headers})
         .subscribe(res => {
